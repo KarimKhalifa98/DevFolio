@@ -82,3 +82,16 @@ filters.forEach((filter) => {
   });
 });
 // Filter In Portfolio Section
+// Show Hidden Elements
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+document.querySelectorAll(".hidden").forEach((e) => {
+  observer.observe(e);
+});
