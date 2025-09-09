@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imgs/icon.png">
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>DevFolio</title>
+  </head>
+  <body>
+    <nav
+      class="navbar sticky-top navbar-expand-lg bg-black navbar-dark py-3"
+      style="height: 90px"
+    >
+      <div class="container">
+        <a class="navbar-brand fs-2 fw-bold" href="#">DevFolio</a>
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#links"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="links">
+          <ul class="navbar-nav ms-auto bg-black fs-6">
+            <li class="nav-item">
+              <a
+                class="nav-link position-relative px-4 active"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative px-4" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative px-4" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative px-4" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle position-relative px-4"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" style="width: 200px">
+                <li>
+                  <a class="dropdown-item p-2 p-3-lg" href="#">Dropdown 1</a>
+                </li>
+                <li class="dropdown">
+                  <a
+                    class="dropdown-item dropdown-toggle p-2 p-3-lg"
+                    id="deepDropdown"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >Deep Dropdown</a
+                  >
+                  <ul
+                    class="dropdown-menu position-absolute"
+                    style="width: 200px"
+                  >
+                    <li>
+                      <a class="dropdown-item ps-3 py-2" href="#"
+                        >Deep Dropdown 1</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item ps-3 py-2" href="#"
+                        >Deep Dropdown 2</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item ps-3 py-2" href="#"
+                        >Deep Dropdown 3</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item ps-3 py-2" href="#"
+                        >Deep Dropdown 4</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item ps-3 py-2" href="#"
+                        >Deep Dropdown 5</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2 p-3-lg" href="#">Dropdown 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2 p-3-lg" href="#">Dropdown 3</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2 p-3-lg" href="#">Dropdown 4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative px-4" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- Start Home -->
+      <section
+        id="home"
+        class="landing position-relative d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="info position-absolute z-index-3 h-25 text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h1 class="fw-bold mb-0">I am Morgan Freeman</h1>
+          <p class="text-center fs-1">
+            <span id="text"></span>
+            <span class="cursor">|</span>
+          </p>
+        </div>
+      </section>
+      <!-- End Home -->
+      <!-- Start About -->
+      <section id="about" class="py-5">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+          <div class="row p-4 mt-5 shadow-lg">
+            <div class="info col-12 col-md-6">
+              <div class="contact row">
+                <div class="img col-12 col-lg-6">
+                  <img src="imgs/about.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="info-content col-12 col-lg-6 mt-3 mt-lg-0">
+                  <p><span class="fw-bold">Name:</span> Morgan Freeman</p>
+                  <p>
+                    <span class="fw-bold">Title:</span> Full Stack Developer
+                  </p>
+                  <p><span class="fw-bold">Email:</span> contact@example.com</p>
+                  <p><span class="fw-bold">Phone:</span> (617) 557-0089</p>
+                </div>
+              </div>
+              <div class="skills mt-3">
+                <h4>Skills</h4>
+                <div class="skill mb-3">
+                  <div
+                    class="d-flex justify-content-between mb-2"
+                    style="font-size: 12px"
+                  >
+                    <span class="text-uppercase">Html</span>
+                    <span>100%</span>
+                  </div>
+                  <div class="progress rounded-0" style="height: 10px">
+                    <div class="progress-bar" data-width="100%"></div>
+                  </div>
+                </div>
+                <div class="skill mb-3">
+                  <div
+                    class="d-flex justify-content-between mb-2"
+                    style="font-size: 12px"
+                  >
+                    <span class="text-uppercase">Css</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress rounded-0" style="height: 10px">
+                    <div class="progress-bar" data-width="90%"></div>
+                  </div>
+                </div>
+                <div class="skill mb-3">
+                  <div
+                    class="d-flex justify-content-between mb-2"
+                    style="font-size: 12px"
+                  >
+                    <span class="text-uppercase">JavaScript</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="progress rounded-0" style="height: 10px">
+                    <div class="progress-bar" data-width="75%"></div>
+                  </div>
+                </div>
+                <div class="skill mb-3">
+                  <div
+                    class="d-flex justify-content-between mb-2"
+                    style="font-size: 12px"
+                  >
+                    <span class="text-uppercase">Photoshop</span>
+                    <span>55%</span>
+                  </div>
+                  <div class="progress rounded-0" style="height: 10px">
+                    <div class="progress-bar" data-width="55%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-me col-12 col-md-6">
+              <h3 class="fs-2 mb-4 position-relative">About Me</h3>
+              <p class="lh-lg">
+                Curabitur non nulla sit amet nisl tempus convallis quis ac
+                lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                at sem. Praesent sapien massa, convallis a pellentesque nec,
+                egestas non nisi. Nulla porttitor accumsan tincidunt.
+              </p>
+              <p class="lh-lg">
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Vivamus suscipit tortor eget felis porttitor volutpat.
+                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                dui. porttitor at sem.
+              </p>
+              <p class="lh-lg">
+                Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium
+                ut lacinia in, elementum id enim. Nulla porttitor accumsan
+                tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh
+                pulvinar a.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About -->
+      <!-- Start Resume -->
+      <section class="py-5">
+        <div class="container">
+          <div class="my-5" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-center mb-4 position-relative fs-1 fw-bold">
+              Resume
+            </h2>
+            <p class="text-center">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+          <div class="resume-info row">
+            <div
+              class="col-12 col-lg-6 mb-5 mb-lg-0"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <h3 class="fw-bold">Sumary</h3>
+              <div class="lollipop ms-4 mb-5 text-secondary position-relative">
+                <h4 class="fs-5 text-uppercase">Brandon Johnson</h4>
+                <p class="fst-italic">
+                  Innovative and deadline-driven Graphic Designer with 3+ years
+                  of experience designing and developing user-centered
+                  digital/print marketing material from initial concept to
+                  final, polished deliverable.
+                </p>
+                <ul class="lh-lg">
+                  <li>Portland par 127,Orlando, FL</li>
+                  <li>(123) 456-7891</li>
+                  <li>alice.barkley@example.com</li>
+                </ul>
+              </div>
+              <h3 class="fw-bold">Education</h3>
+              <div class="lollipop ms-4 text-secondary position-relative">
+                <h4 class="fs-5 text-uppercase">
+                  Master of Fine Arts & Graphic Design
+                </h4>
+                <span class="text-black fw-bold ms-4">2015 - 2016</span>
+                <p class="fst-italic">
+                  Rochester Institute of Technology, Rochester, NY
+                </p>
+                <p>
+                  Qui deserunt veniam. Et sed aliquam labore tempore sed
+                  quisquam iusto autem sit. Ea vero voluptatum qui ut
+                  dignissimos deleniti nerada porti sand markend
+                </p>
+              </div>
+              <div class="lollipop ms-4 text-secondary position-relative">
+                <h4 class="fs-5 text-uppercase">
+                  Bachelor of Fine Arts & Graphic Design
+                </h4>
+                <span class="text-black fw-bold ms-4">2010 - 2014</span>
+                <p class="fst-italic">
+                  Rochester Institute of Technology, Rochester, NY
+                </p>
+                <p>
+                  Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
+                  reiciendis et quis Eius vel ratione eius unde vitae rerum
+                  voluptates asperiores voluptatem Earum molestiae consequatur
+                  neque etlon sader mart dila
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <h3 class="fw-bold">Professional Experience</h3>
+              <div class="lollipop ms-4 text-secondary position-relative">
+                <h4 class="fs-5 text-uppercase">
+                  Senior graphic design specialist
+                </h4>
+                <span class="text-black fw-bold ms-4">2019 - Present</span>
+                <p class="fst-italic">Experion, New York, NY</p>
+                <ul class="lh-lg">
+                  <li>
+                    Lead in the design, development, and implementation of the
+                    graphic, layout, and production communication materials
+                  </li>
+                  <li>
+                    Delegate tasks to the 7 members of the design team and
+                    provide counsel on all aspects of the project.
+                  </li>
+                  <li>
+                    Supervise the assessment of all graphic materials in order
+                    to ensure quality and accuracy of the design
+                  </li>
+                  <li>
+                    Oversee the efficient use of production project budgets
+                    ranging from $2,000 - $25,000
+                  </li>
+                </ul>
+              </div>
+              <div class="lollipop ms-4 text-secondary position-relative">
+                <h4 class="fs-5 text-uppercase">Graphic design specialist</h4>
+                <span class="text-black fw-bold ms-4">2017 - 2018</span>
+                <p class="fst-italic">
+                  Stepping Stone Advertising, New York, NY
+                </p>
+                <ul class="lh-lg">
+                  <li>
+                    Developed numerous marketing programs (logos,
+                    brochures,infographics, presentations, and advertisements).
+                  </li>
+                  <li>
+                    Managed up to 5 projects or tasks at a given time while
+                    under pressure
+                  </li>
+                  <li>
+                    Recommended and consulted with clients on the most
+                    appropriate graphic design
+                  </li>
+                  <li>
+                    Created 4+ design presentations and proposals a month for
+                    clients and account managers
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Resume -->
+      <!-- Start Services -->
+      <section id="services" class="py-5">
+        <div class="container">
+          <div class="my-5" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-center mb-4 position-relative fs-1 fw-bold">
+              Services
+            </h2>
+            <p class="text-center">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+          <div class="row gy-5">
+            <div
+              class="service col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <div class="rounded-5 shadow-lg p-4 h-100">
+                <i
+                  class="fa-solid fa-wave-square bg-primary p-3 rounded-circle text-white fs-4"
+                ></i>
+                <h3 class="my-3 fs-4">Nesciunt Mete</h3>
+                <p>
+                  Provident nihil minus qui consequatur non omnis maiores. Eos
+                  accusantium minus dolores iure perferendis tempore et
+                  consequatur.
+                </p>
+              </div>
+            </div>
+            <div
+              class="service col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="rounded-5 shadow-lg p-4 h-100">
+                <i
+                  class="fa-solid fa-tower-broadcast bg-primary p-3 rounded-circle text-white fs-4"
+                ></i>
+                <h3 class="my-3 fs-4">Eosle Commodi</h3>
+                <p>
+                  Ut autem aut autem non a. Sint sint sit facilis nam iusto
+                  sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
+                </p>
+              </div>
+            </div>
+            <div
+              class="service col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <div class="rounded-5 shadow-lg p-4 h-100">
+                <i
+                  class="fa-solid fa-palette bg-primary p-3 rounded-circle text-white fs-4"
+                ></i>
+                <h3 class="my-3 fs-4">Ledo Markt</h3>
+                <p>
+                  Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
+                  Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
+                </p>
+              </div>
+            </div>
+            <div
+              class="service col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <div class="rounded-5 shadow-lg p-4 h-100">
+                <i
+                  class="fa-solid fa-cubes bg-primary p-3 rounded-circle text-white fs-4"
+                ></i>
+                <h3 class="my-3 fs-4">Asperiores Commodit</h3>
+                <p>
+                  Non et temporibus minus omnis sed dolor esse consequatur.
+                  Cupiditate sed error ea fuga sit provident adipisci neque.
+                </p>
+              </div>
+            </div>
+            <div
+              class="service col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="rounded-5 shadow-lg p-4 h-100">
+                <i
+                  class="fa-solid fa-calendar-days bg-primary p-3 rounded-circle text-white fs-4"
+                ></i>
+                <h3 class="my-3 fs-4">Velit Doloremque</h3>
+                <p>
+                  Cumque et suscipit saepe. Est maiores autem enim facilis ut
+                  aut ipsam corporis aut. Sed animi at autem alias eius labore.
+                </p>
+              </div>
+            </div>
+            <div
+              class="service col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <div class="rounded-5 shadow-lg p-4 h-100">
+                <i
+                  class="fa-solid fa-comment-dots bg-primary p-3 rounded-circle text-white fs-4"
+                ></i>
+                <h3 class="my-3 fs-4">Dolori Architecto</h3>
+                <p>
+                  Hic molestias ea quibusdam eos. Fugiat enim doloremque aut
+                  neque non et debitis iure. Corrupti recusandae ducimus enim.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services -->
+      <!-- Start Statistics -->
+      <section
+        class="statestics v100 py-5 position-relative"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div
+          class="container p-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <div class="row text-white z-index-2 position-relative">
+            <div class="stat text-center p-5 col-12 col-md-6 col-lg-3">
+              <span class="fs-1 fw-bold">232</span>
+              <p>clients</p>
+            </div>
+            <div class="stat text-center p-5 col-12 col-md-6 col-lg-3">
+              <span class="fs-1 fw-bold">521</span>
+              <p>Projects</p>
+            </div>
+            <div class="stat text-center p-5 col-12 col-md-6 col-lg-3">
+              <span class="fs-1 fw-bold">1453</span>
+              <p>Hours Of Support</p>
+            </div>
+            <div class="stat text-center p-5 col-12 col-md-6 col-lg-3">
+              <span class="fs-1 fw-bold">32</span>
+              <p>Awards</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Statistics -->
+      <!-- Start Portfolio -->
+      <section id="portfolio" class="py-5">
+        <div class="container">
+          <div class="my-5" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-center mb-4 position-relative fs-1 fw-bold">
+              Portfolio
+            </h2>
+            <p class="text-center">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+          <ul
+            class="filter d-flex justify-content-center gap-3 list-unstyled my-5 fs-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <li class="active" data-select=".all">All</li>
+            <li data-select=".app">App</li>
+            <li data-select=".product">Product</li>
+            <li data-select=".branding">Branding</li>
+            <li data-select=".book">Books</li>
+          </ul>
+          <div class="imgs row g-4" data-aos="fade-up" data-aos-duration="1000">
+            <div
+              class="col-12 col-md-6 col-lg-4 all app"
+              data-aos-duration="1000"
+            >
+              <figure class="position-relative overflow-hidden">
+                <img src="imgs/portfolio01.jpg" class="img-fluid" alt="" />
+                <figcaption
+                  class="caption position-absolute p-3 d-flex align-items-center"
+                >
+                  <div class="flex-grow-1">
+                    <h3 class="fs-4">App 1</h3>
+                    <p class="text-black-50">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="text-black-50">
+                      <i
+                        class="fa-solid fa-magnifying-glass-plus fa-lg p-2"
+                      ></i>
+                    </a>
+                    <a href="#" class="text-black-50">
+                      <i class="fa-solid fa-link fa-lg p-2"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 all product"
+              data-aos-duration="1000"
+            >
+              <figure class="position-relative overflow-hidden">
+                <img src="imgs/portfolio02.jpg" class="img-fluid" alt="" />
+                <figcaption
+                  class="caption position-absolute p-3 d-flex align-items-center"
+                >
+                  <div class="flex-grow-1">
+                    <h3 class="fs-4">Product 1</h3>
+                    <p class="text-black-50">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="text-black-50">
+                      <i
+                        class="fa-solid fa-magnifying-glass-plus fa-lg p-2"
+                      ></i>
+                    </a>
+                    <a href="#" class="text-black-50">
+                      <i class="fa-solid fa-link fa-lg p-2"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 all branding"
+              data-aos-duration="1000"
+            >
+              <figure class="position-relative overflow-hidden">
+                <img src="imgs/portfolio03.jpg" class="img-fluid" alt="" />
+                <figcaption
+                  class="caption position-absolute p-3 d-flex align-items-center"
+                >
+                  <div class="flex-grow-1">
+                    <h3 class="fs-4">Branding 1</h3>
+                    <p class="text-black-50">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="text-black-50">
+                      <i
+                        class="fa-solid fa-magnifying-glass-plus fa-lg p-2"
+                      ></i>
+                    </a>
+                    <a href="#" class="text-black-50">
+                      <i class="fa-solid fa-link fa-lg p-2"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 all book"
+              data-aos-duration="1000"
+            >
+              <figure class="position-relative overflow-hidden">
+                <img src="imgs/portfolio04.jpg" class="img-fluid" alt="" />
+                <figcaption
+                  class="caption position-absolute p-3 d-flex align-items-center"
+                >
+                  <div class="flex-grow-1">
+                    <h3 class="fs-4">Books 1</h3>
+                    <p class="text-black-50">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="text-black-50">
+                      <i
+                        class="fa-solid fa-magnifying-glass-plus fa-lg p-2"
+                      ></i>
+                    </a>
+                    <a href="#" class="text-black-50">
+                      <i class="fa-solid fa-link fa-lg p-2"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 all app"
+              data-aos-duration="1000"
+            >
+              <figure class="position-relative overflow-hidden">
+                <img src="imgs/portfolio05.jpg" class="img-fluid" alt="" />
+                <figcaption
+                  class="caption position-absolute p-3 d-flex align-items-center"
+                >
+                  <div class="flex-grow-1">
+                    <h3 class="fs-4">App 2</h3>
+                    <p class="text-black-50">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="text-black-50">
+                      <i
+                        class="fa-solid fa-magnifying-glass-plus fa-lg p-2"
+                      ></i>
+                    </a>
+                    <a href="#" class="text-black-50">
+                      <i class="fa-solid fa-link fa-lg p-2"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 all product"
+              data-aos-duration="1000"
+            >
+              <figure class="position-relative overflow-hidden">
+                <img src="imgs/portfolio06.jpg" class="img-fluid" alt="" />
+                <figcaption
+                  class="caption position-absolute p-3 d-flex align-items-center"
+                >
+                  <div class="flex-grow-1">
+                    <h3 class="fs-4">Product 2</h3>
+                    <p class="text-black-50">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="text-black-50">
+                      <i
+                        class="fa-solid fa-magnifying-glass-plus fa-lg p-2"
+                      ></i>
+                    </a>
+                    <a href="#" class="text-black-50">
+                      <i class="fa-solid fa-link fa-lg p-2"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 all branding"
+              data-aos-duration="1000"
+            >
+              <figure class="position-relative overflow-hidden">
+                <img src="imgs/portfolio07.jpg" class="img-fluid" alt="" />
+                <figcaption
+                  class="caption position-absolute p-3 d-flex align-items-center"
+                >
+                  <div class="flex-grow-1">
+                    <h3 class="fs-4">Branding 2</h3>
+                    <p class="text-black-50">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="text-black-50">
+                      <i
+                        class="fa-solid fa-magnifying-glass-plus fa-lg p-2"
+                      ></i>
+                    </a>
+                    <a href="#" class="text-black-50">
+                      <i class="fa-solid fa-link fa-lg p-2"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 all book"
+              data-aos-duration="1000"
+            >
+              <figure class="position-relative overflow-hidden">
+                <img src="imgs/portfolio08.jpg" class="img-fluid" alt="" />
+                <figcaption
+                  class="caption position-absolute p-3 d-flex align-items-center"
+                >
+                  <div class="flex-grow-1">
+                    <h3 class="fs-4">Books 2</h3>
+                    <p class="text-black-50">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="text-black-50">
+                      <i
+                        class="fa-solid fa-magnifying-glass-plus fa-lg p-2"
+                      ></i>
+                    </a>
+                    <a href="#" class="text-black-50">
+                      <i class="fa-solid fa-link fa-lg p-2"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 all app"
+              data-aos-duration="1000"
+            >
+              <figure class="position-relative overflow-hidden">
+                <img src="imgs/portfolio09.jpg" class="img-fluid" alt="" />
+                <figcaption
+                  class="caption position-absolute p-3 d-flex align-items-center"
+                >
+                  <div class="flex-grow-1">
+                    <h3 class="fs-4">App 3</h3>
+                    <p class="text-black-50">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="text-black-50">
+                      <i
+                        class="fa-solid fa-magnifying-glass-plus fa-lg p-2"
+                      ></i>
+                    </a>
+                    <a href="#" class="text-black-50">
+                      <i class="fa-solid fa-link fa-lg p-2"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 all product"
+              data-aos-duration="1000"
+            >
+              <figure class="position-relative overflow-hidden">
+                <img src="imgs/portfolio10.jpg" class="img-fluid" alt="" />
+                <figcaption
+                  class="caption position-absolute p-3 d-flex align-items-center"
+                >
+                  <div class="flex-grow-1">
+                    <h3 class="fs-4">Product 3</h3>
+                    <p class="text-black-50">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="text-black-50">
+                      <i
+                        class="fa-solid fa-magnifying-glass-plus fa-lg p-2"
+                      ></i>
+                    </a>
+                    <a href="#" class="text-black-50">
+                      <i class="fa-solid fa-link fa-lg p-2"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 all branding"
+              data-aos-duration="1000"
+            >
+              <figure class="position-relative overflow-hidden">
+                <img src="imgs/portfolio11.jpg" class="img-fluid" alt="" />
+                <figcaption
+                  class="caption position-absolute p-3 d-flex align-items-center"
+                >
+                  <div class="flex-grow-1">
+                    <h3 class="fs-4">Branding 3</h3>
+                    <p class="text-black-50">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="text-black-50">
+                      <i
+                        class="fa-solid fa-magnifying-glass-plus fa-lg p-2"
+                      ></i>
+                    </a>
+                    <a href="#" class="text-black-50">
+                      <i class="fa-solid fa-link fa-lg p-2"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 all book"
+              data-aos-duration="1000"
+            >
+              <figure class="position-relative overflow-hidden">
+                <img src="imgs/portfolio12.jpg" class="img-fluid" alt="" />
+                <figcaption
+                  class="caption position-absolute p-3 d-flex align-items-center"
+                >
+                  <div class="flex-grow-1">
+                    <h3 class="fs-4">Books 3</h3>
+                    <p class="text-black-50">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="text-black-50">
+                      <i
+                        class="fa-solid fa-magnifying-glass-plus fa-lg p-2"
+                      ></i>
+                    </a>
+                    <a href="#" class="text-black-50">
+                      <i class="fa-solid fa-link fa-lg p-2"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio -->
+      <!-- Start Pricing -->
+      <secion class="py-5">
+        <div class="container">
+          <div class="my-5" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-center mb-4 position-relative fs-1 fw-bold">
+              Pricing
+            </h2>
+            <p class="text-center">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+          <div class="row mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12 col-lg-6">
+              <p
+                class="p-3 fs-5 d-flex justify-content-between align-items-center"
+                style="border-bottom: 1px dashed"
+              >
+                Portrait Photography<span class="text-primary">$160.00</span>
+              </p>
+              <p
+                class="p-3 fs-5 d-flex justify-content-between align-items-center"
+                style="border-bottom: 1px dashed"
+              >
+                Sports Photography<span class="text-primary">$200.00</span>
+              </p>
+              <p
+                class="p-3 fs-5 d-flex justify-content-between align-items-center"
+                style="border-bottom: 1px dashed"
+              >
+                Wedding Photography<span class="text-primary">$500.00</span>
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <p
+                class="p-3 fs-5 d-flex justify-content-between align-items-center"
+                style="border-bottom: 1px dashed"
+              >
+                Fashion Photography<span class="text-primary">$300.00</span>
+              </p>
+              <p
+                class="p-3 fs-5 d-flex justify-content-between align-items-center"
+                style="border-bottom: 1px dashed"
+              >
+                Still Life Photography<span class="text-primary">$120.00</span>
+              </p>
+              <p
+                class="p-3 fs-5 d-flex justify-content-between align-items-center"
+                style="border-bottom: 1px dashed"
+              >
+                Photojournalism<span class="text-primary">$200.00</span>
+              </p>
+            </div>
+            <div
+              class="col-12 col-lg-4 mt-5"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <h3>
+                Frequently Asked <span class="fw-bold fs-2">Questions</span>
+              </h3>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+                aute irure dolor in reprehenderit
+              </p>
+            </div>
+            <div
+              class="col-12 col-lg-8 mt-5"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="accordion">
+                <div class="accordion-item my-3 bg-white shadow-lg">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button fw-bold shadow-none collapsed"
+                      data-bs-target="#question1"
+                      data-bs-toggle="collapse"
+                    >
+                      <span class="text-primary">1. </span>
+                      Non consectetur a erat nam at lectus urna duis?
+                    </button>
+                  </h3>
+                  <div id="question1" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
+                      id volutpat lacus laoreet non curabitur gravida. Venenatis
+                      lectus magna fringilla urna porttitor rhoncus dolor purus
+                      non.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item my-3 bg-white shadow-lg">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button fw-bold shadow-none collapsed"
+                      data-bs-target="#question2"
+                      data-bs-toggle="collapse"
+                    >
+                      <span class="text-primary">2. </span>Feugiat scelerisque
+                      varius morbi enim nunc faucibus a pellentesque?
+                    </button>
+                  </h3>
+                  <div id="question2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Dolor sit amet consectetur adipiscing elit pellentesque
+                      habitant morbi. Id interdum velit laoreet id donec
+                      ultrices. Fringilla phasellus faucibus scelerisque
+                      eleifend donec pretium. Est pellentesque elit ullamcorper
+                      dignissim. Mauris ultrices eros in cursus turpis massa
+                      tincidunt dui.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item my-3 bg-white shadow-lg">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button fw-bold shadow-none collapsed"
+                      data-bs-target="#question3"
+                      data-bs-toggle="collapse"
+                    >
+                      <span class="text-primary">3. </span>Dolor sit amet
+                      consectetur adipiscing elit pellentesque?
+                    </button>
+                  </h3>
+                  <div id="question3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                      sagittis orci. Faucibus pulvinar elementum integer enim.
+                      Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+                      tellus pellentesque eu tincidunt. Lectus urna duis
+                      convallis convallis tellus. Urna molestie at elementum eu
+                      facilisis sed odio morbi quis
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item my-3 bg-white shadow-lg">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button fw-bold shadow-none collapsed"
+                      data-bs-target="#question4"
+                      data-bs-toggle="collapse"
+                    >
+                      <span class="text-primary">4. </span>Ac odio tempor orci
+                      dapibus. Aliquam eleifend mi in nulla?
+                    </button>
+                  </h3>
+                  <div id="question4" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Dolor sit amet consectetur adipiscing elit pellentesque
+                      habitant morbi. Id interdum velit laoreet id donec
+                      ultrices. Fringilla phasellus faucibus scelerisque
+                      eleifend donec pretium. Est pellentesque elit ullamcorper
+                      dignissim. Mauris ultrices eros in cursus turpis massa
+                      tincidunt dui.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item my-3 bg-white shadow-lg">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button fw-bold shadow-none collapsed"
+                      data-bs-target="#question5"
+                      data-bs-toggle="collapse"
+                    >
+                      <span class="text-primary">5. </span>Tempus quam
+                      pellentesque nec nam aliquam sem et tortor consequat?
+                    </button>
+                  </h3>
+                  <div id="question5" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Molestie a iaculis at erat pellentesque adipiscing
+                      commodo. Dignissim suspendisse in est ante in. Nunc vel
+                      risus commodo viverra maecenas accumsan. Sit amet nisl
+                      suscipit adipiscing bibendum est. Purus gravida quis
+                      blandit turpis cursus in
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </secion>
+      <!-- End Pricing -->
+      <!-- Start Testimonials -->
+      <section
+        class="testimonials position-relative py-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div
+          class="container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <div
+            id="slider"
+            class="carousel slide w-75 m-auto"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                class="active"
+                data-bs-target="#slider"
+                data-bs-slide-to="0"
+              ></button>
+              <button data-bs-target="#slider" data-bs-slide-to="1"></button>
+              <button data-bs-target="#slider" data-bs-slide-to="2"></button>
+              <button data-bs-target="#slider" data-bs-slide-to="3"></button>
+              <button data-bs-target="#slider" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner text-white text-center p-3">
+              <div class="carousel-item active">
+                <div
+                  class="rounded-circle border border-primary-subtle border-5 mb-3 m-auto overflow-hidden"
+                  style="width: 100px"
+                >
+                  <img src="imgs/testimonials1.jpg" class="img-fluid" alt="" />
+                </div>
+                <h3>Saul Goodman</h3>
+                <h4 class="text-white-50 fs-5">Ceo & Founder</h4>
+                <div class="stars fa-sm my-3">
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                </div>
+                <div
+                  class="qoute p-3 d-flex align-items-center"
+                  style="height: 200px"
+                >
+                  <q class="position-relative"
+                    >Proin iaculis purus consequat sem cure digni ssim donec
+                    porttitora entum suscipit rhoncus. Accusantium quam,
+                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                    risus at semper.</q
+                  >
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="rounded-circle border border-primary-subtle border-5 mb-3 m-auto overflow-hidden"
+                  style="width: 100px"
+                >
+                  <img src="imgs/testimonials2.jpg" class="img-fluid" alt="" />
+                </div>
+                <h3>Sara Wilsson</h3>
+                <h4 class="text-white-50 fs-5">Designer</h4>
+                <div class="stars fa-sm my-3">
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                </div>
+                <div
+                  class="qoute p-3 d-flex align-items-center"
+                  style="height: 200px"
+                >
+                  <q class="position-relative"
+                    >Export tempor illum tamen malis malis eram quae irure esse
+                    labore quem cillum quid cillum eram malis quorum velit fore
+                    eram velit sunt aliqua noster fugiat irure amet legam anim
+                    culpa.</q
+                  >
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="rounded-circle border border-primary-subtle border-5 mb-3 m-auto overflow-hidden"
+                  style="width: 100px"
+                >
+                  <img src="imgs/testimonials3.jpg" class="img-fluid" alt="" />
+                </div>
+                <h3>Jena Karlis</h3>
+                <h4 class="text-white-50 fs-5">Store Owner</h4>
+                <div class="stars fa-sm my-3">
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                </div>
+                <div
+                  class="qoute p-3 d-flex align-items-center"
+                  style="height: 200px"
+                >
+                  <q class="position-relative"
+                    >Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sint minim.</q
+                  >
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="rounded-circle border border-primary-subtle border-5 mb-3 m-auto overflow-hidden"
+                  style="width: 100px"
+                >
+                  <img src="imgs/testimonials4.jpg" class="img-fluid" alt="" />
+                </div>
+
+                <h3>Matt Brandon</h3>
+                <h4 class="text-white-50 fs-5">Freelancer</h4>
+                <div class="stars fa-sm my-3">
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                </div>
+                <div
+                  class="qoute p-3 d-flex align-items-center"
+                  style="height: 200px"
+                >
+                  <q class="position-relative"
+                    >Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                    multos export minim fugiat minim velit minim dolor enim duis
+                    veniam ipsum anim magna sunt elit fore quem dolore labore
+                    illum veniam.</q
+                  >
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="rounded-circle border border-primary-subtle border-5 mb-3 m-auto overflow-hidden"
+                  style="width: 100px"
+                >
+                  <img src="imgs/testimonials5.jpg" class="img-fluid" alt="" />
+                </div>
+                <h3>John Larson</h3>
+                <h4 class="text-white-50 fs-5">Entrepreneur</h4>
+                <div class="stars fa-sm my-3">
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                  <i class="fa-solid fa-star" style="color: gold"></i>
+                </div>
+                <div
+                  class="qoute p-3 d-flex align-items-center"
+                  style="height: 200px"
+                >
+                  <q class="position-relative"
+                    >Quis quorum aliqua sint quem legam fore sunt eram irure
+                    aliqua veniam tempor noster veniam enim culpa labore duis
+                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
+                    fore nisi cillum quid.</q
+                  >
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-next"
+              data-bs-target="#slider"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <button
+              class="carousel-control-prev"
+              data-bs-target="#slider"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials -->
+      <!-- Start Contact -->
+      <section id="contact" class="contact py-5">
+        <div class="container">
+          <div class="my-5" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-center mb-4 position-relative fs-1 fw-bold">
+              Contact
+            </h2>
+            <p class="text-center">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+          <div
+            class="row g-3 shadow p-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="call col-12 col-lg-4 d-flex align-items-center">
+              <i
+                class="fa-solid fa-location-dot me-3 p-3 link-primary link-opacity-75 link-opacity-100-hover fa-lg rounded-circle border border-primary"
+              ></i>
+              <div class="text">
+                <span class="d-block fs-5 fw-bold">Address</span>
+                <span class="d-block" style="font-size: 14px"
+                  >A108 Adam Street, New York, NY 535022</span
+                >
+              </div>
+            </div>
+            <div class="call col-12 col-lg-4 d-flex align-items-center">
+              <i
+                class="fa-solid fa-phone me-3 p-3 link-primary link-opacity-75 link-opacity-100-hover fa-lg rounded-circle border border-primary"
+              ></i>
+              <div class="text">
+                <span class="d-block fs-5 fw-bold">Call Us</span>
+                <span class="d-block" style="font-size: 14px"
+                  >+1 5589 55488 55</span
+                >
+              </div>
+            </div>
+            <div class="call col-12 col-lg-4 d-flex align-items-center">
+              <i
+                class="fa-solid fa-envelope me-3 p-3 link-primary link-opacity-75 link-opacity-100-hover fa-lg rounded-circle border border-primary"
+              ></i>
+              <div class="text">
+                <span class="d-block fs-5 fw-bold">Email Us</span>
+                <span class="d-block" style="font-size: 14px"
+                  >info@example.com</span
+                >
+              </div>
+            </div>
+          </div>
+          <form
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <div class="row g-4 shadow-lg p-3 my-5">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="w-100 p-2 border"
+                  required
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  class="w-100 p-2 border"
+                  required
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="w-100 p-2 border"
+                  required
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="col-md-12" style="height: 150px">
+                <textarea
+                  class="w-100 h-100 p-2 border"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-primary rounded-pill px-4">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- End Contact -->
+    </main>
+    <footer
+      class="bg-primary text-center p-5 text-white"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <p>© Copyright <strong>DevFolio</strong> All Rights Reserved</p>
+        <div class="social p-3">
+          <a href="#" class="link-opacity-50 link-opacity-100-hover link-light"
+            ><i
+              class="fa-brands fa-x-twitter mx-2 p-2 border border-white-50 rounded-circle"
+            ></i
+          ></a>
+          <a href="#" class="link-opacity-50 link-opacity-100-hover link-light"
+            ><i
+              class="fa-brands fa-facebook-f mx-2 p-2 border border-white-50 rounded-circle"
+            ></i
+          ></a>
+          <a href="#" class="link-opacity-50 link-opacity-100-hover link-light"
+            ><i
+              class="fa-brands fa-instagram mx-2 p-2 border border-white-50 rounded-circle"
+            ></i
+          ></a>
+          <a href="#" class="link-opacity-50 link-opacity-100-hover link-light"
+            ><i
+              class="fa-brands fa-linkedin-in mx-2 p-2 border border-white-50 rounded-circle"
+            ></i
+          ></a>
+        </div>
+        <p>Designed by BootstrapMade</p>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

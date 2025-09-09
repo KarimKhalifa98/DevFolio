@@ -1,0 +1,245 @@
+:root {
+  --primary-color: #0d6efd;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* Start Components */
+h2::after {
+  content: "";
+  position: absolute;
+  width: 5%;
+  height: 3px;
+  background-color: var(--primary-color);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* End Components */
+/* Start NavBar */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  bottom: 0;
+  left: 24px;
+  transition: 0.3s;
+}
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: calc(100% - 48px);
+}
+.dropdown-menu .dropdown-item {
+  transition: 0.3s;
+}
+.dropdown-menu .dropdown-item:hover {
+  color: var(--primary-color);
+  padding-left: 2rem !important;
+}
+@media (max-width: 991px) {
+  .dropdown-menu #deepDropdown + ul {
+    top: 0px;
+    left: 130px;
+  }
+}
+@media (min-width: 992px) {
+  .dropdown-menu #deepDropdown + ul {
+    left: -100%;
+  }
+}
+/* End NavBar */
+/* Strart Landing */
+.landing {
+  height: calc(100vh - 90px);
+  background-image: url(../imgs/landing.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+@media (min-width: 992px) {
+  .landing .info h1 {
+    font-size: 4rem;
+  }
+}
+.cursor {
+  margin-left: -10px;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+/* End Landing */
+/* Start About */
+.about-me > h3::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 3px;
+  background-color: var(--primary-color);
+  bottom: -10px;
+  left: 0;
+}
+.progress-bar {
+  width: 0;
+  transition: 1s;
+}
+/* End About */
+/* Start Summary */
+.lollipop::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  z-index: 2;
+}
+.lollipop::after {
+  content: "";
+  position: absolute;
+  left: -23px;
+  top: 15px;
+  width: 2px;
+  height: calc(100% + 10px);
+  background-color: var(--primary-color);
+}
+/* End Summary */
+/* Start Services */
+.service div {
+  cursor: pointer;
+  transition: 0.3s;
+  border-bottom: 5px solid transparent;
+}
+.service div:hover {
+  transform: translateY(-20px);
+  border-bottom: 5px solid var(--primary-color);
+}
+.service div:hover h3 {
+  color: var(--primary-color);
+}
+/* End Services */
+/* Start Statistics */
+.statestics {
+  background-image: url(../imgs/stats.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.statestics::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d6dfd9c;
+}
+/* End Statistics */
+/* Start Portfolio */
+.filter li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.filter li:hover,
+.filter li.active {
+  color: var(--primary-color);
+}
+figure .caption {
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.3s;
+  width: 90%;
+}
+figure:hover .caption {
+  bottom: 20px;
+}
+figure .caption a:hover {
+  color: var(--primary-color) !important;
+}
+.all {
+  transition: 0.5s;
+  opacity: 1;
+  transform: scale(1);
+}
+.all.hidden {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  z-index: -1;
+}
+/* End Portfolio */
+/* Start Pricing */
+.accordion-button {
+  transition: 0.3s;
+}
+.accordion-button:hover {
+  color: var(--primary-color);
+}
+.accordion-button:after {
+  transform: rotate(-90deg);
+}
+/* End Pricing */
+/* Start Testimonials */
+.testimonials {
+  background-image: url(../imgs/testimonials.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.testimonials::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(216, 98%, 52%, 0.7);
+}
+q::before,
+q::after {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+}
+q::before {
+  left: -20px;
+  top: -30px;
+}
+q::after {
+  right: -20px;
+  bottom: -50px;
+}
+/* End Testimonials */
+/* Start Contact */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color) !important;
+  outline: none;
+}
+/* End Contact */
